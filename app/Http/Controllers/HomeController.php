@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth',['except'=>['about','courses','events','gallery','blog','contact']]);
     }
 
     /**
@@ -25,5 +25,29 @@ class HomeController extends Controller
     {
         //return view('home');
         return view('App/home');
+    }
+    public function about()
+    {
+        return view('App/about');
+    }
+    public function courses()
+    {
+        return view('App/courses');
+    }
+    public function events()
+    {
+        return view('App/events');
+    }
+    public function gallery()
+    {
+        return view('App/gallery');
+    }
+    public function blog()
+    {
+        return view('App/blog');
+    }
+    public function contact()
+    {
+        return view('App/contact');
     }
 }
