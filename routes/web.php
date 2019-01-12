@@ -6,6 +6,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
+Route::get('auth/{provider}','Auth\LoginController@redirectToProvider')->name('login.google');
+Route::get('auth/{provider}/callback','Auth\LoginController@handleProviderCallback');
+
 Route::get('/home', 'HomeController@index')->name('home.dashboard');
 Route::get('/about', 'HomeController@about')->name('about');
 Route::get('/courses', 'HomeController@courses')->name('courses');
