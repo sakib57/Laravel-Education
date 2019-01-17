@@ -16,6 +16,8 @@
 		<!-- Site Title -->
 		<title>Education</title>
 
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
 			CSS
@@ -176,8 +178,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					</div>						
 				</div>
 			</footer>	
-			<!-- End footer Area -->	
-
+			<!-- End footer Area -->
 
 			<script src="../frontend/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
